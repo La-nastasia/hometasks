@@ -12,38 +12,43 @@
 </head>
 <body>
     <header class="header">
-        <div class="navbar">
-            <h1 class="logo">Dudeshape</h1>
-            <nav class="nav">
-                <ul class="nav_list">
-                    <li class="nav_list_item">Home</li>
-                    <li class="nav_list_item">Products</li>
-                    <li class="nav_list_item">About Us</li>
-                    <li class="nav_list_item">Contacts</li>
+        <div class="container">
+            <div class="navbar">
+                <h1 class="logo">Dudeshape</h1>
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li class="nav_list_item">Home</li>
+                        <li class="nav_list_item">Products</li>
+                        <li class="nav_list_item">About Us</li>
+                        <li class="nav_list_item">Contact Us</li>
+                    </ul>
+                </nav>
+                <ul class="button_box">
+                    <li class="button_box_item"><img class="button_box_img" src="img/Profile.png" alt="Profile"></li>
+                    <li class="button_box_item"><img class="button_box_img" src="img/Buy.png" alt="Buy"></li>
+                    <li class="button_box_item"><img class="button_box_img" src="img/Frame.png" alt="Frame"></li>
                 </ul>
-            </nav>
-            <ul class="button_box">
-                <li class="button_box_item"><img class="button_box_img" src="img/Profile.png" alt="Profile"></li>
-                <li class="button_box_item"><img class="button_box_img" src="img/Buy.png" alt="Buy"></li>
-                <li class="button_box_item"><img class="button_box_img" src="img/Frame.png" alt="Frame"></li>
-            </ul>
-        </div>
-        <div class="best_product">
-            <div class="best_product_textbox">
-                <h1 class="best_product_title">Get Your Best Cosmetic Products Here</h1>
-                <p class="best_product_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                <form action="" class="best_product_search">
-                    <input type="text" name="text" placeholder="Search" required>
-                    <button class="search_button"><img src="img/Search.png" alt="Search"></button>
-                </form>
-                <button class="best_product_button">Shop Now</button>
             </div>
-            <img class="best_product_img" src="img/image.png" alt="Cosmetics">
+            <div class="best_product">
+                <div class="best_product_textbox">
+                    <h1 class="best_product_title">Get Your Best Cosmetic Products Here</h1>
+                    <p class="best_product_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <div class="search_wrapper">
+                        <form action="" class="best_product_search">
+                            <input type="text" name="text" placeholder="Search" required>
+                            <button class="search_button"><img src="img/Search.png" alt="Search"></button>
+                        </form>
+                    </div>
+                    <button class="best_product_button">Shop Now</button>
+                </div>
+                <img class="best_product_img" src="img/image.png" alt="Cosmetics">
+            </div>
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <section class="companies">
+        <section class="companies">
+            <div class="container">
+                <hr class="companies_line_1">
                 <ul class="companies_list">
                     <li class="companies_list_item"><img src="img/Airbnb.png" alt="Airbnb"></li>
                     <li class="companies_list_item"><img src="img/Hubspot.png" alt="Hubspot"></li>
@@ -52,13 +57,16 @@
                     <li class="companies_list_item"><img src="img/Walmart.png" alt="Walmart"></li>
                     <li class="companies_list_item"><img src="img/FedEx.png" alt="FedEx"></li>
                 </ul>
-            </section>
-            <section class="popular">
-                    <h2 class="popular_title">Our Porular Product</h2>
-                    <div class="popular_box">
-                        <p class="popular_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                        <button class="popular_button">Discover Our Products<img src="img/Pointer.png" alt="Pointer"></button>
-                    </div>
+                <hr class="companies_line_2">
+            </div>
+        </section>
+        <section class="popular">
+            <div class="container">
+                <h2 class="popular_title">Our Porular Product</h2>
+                <div class="popular_box">
+                    <p class="popular_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <a class="popular_link" href="#">Discover Our Products<img class="popular_img" src="img/Pointer.png" alt="Pointer"></a>
+                </div>
                 <div class="cards">
                     <div class="card_1">
                         <img  class="card_img" src="img/bottle.png" alt="bottle">
@@ -85,8 +93,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="counters">
+            </div>
+        </section>
+        <section class="counters">
+            <div class="container counters_wrapper">
                 <ul class="counters_list">
                     <li class="counters_list_item">
                         <h5 class="counter_title">100%</h5>
@@ -104,46 +114,56 @@
                         <p class="counter_text">Happy Customar</p>
                     </li>
                 </ul>
-            </section>
-            <section class="perfect">
-                <div class="perfect_textbox">
-                    <h2 class="perfect_title">The Perfect Beauty Of You</h2>
-                        <p class="perfect_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 
-                        to make a type specimen book.</p>
-                        <p class="perfect_text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <button class="perfect_button">Shop Now</button>
+            </div>
+        </section>
+        <section class="perfect">
+            <div class="container">
+                <div class="perfect_wrapper">
+                    <div class="perfect_textbox">
+                        <h2 class="perfect_title">The Perfect Beauty Of You</h2>
+                            <p class="perfect_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 
+                            to make a type specimen book.</p>
+                            <p class="perfect_text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="perfect_button">Shop Now</button>
+                    </div>
+                    <img class="perfect_img" src="img/cosmetics.png" alt="cosmetics">
                 </div>
-                <img class="perfect_img" src="img/cosmetics.png" alt="cosmetics">
-            </section>
-            <section class="designer">
-                <img class="designer_img" src="img/woman.png" alt="woman">
-                <div class="designer_textbox">
-                    <h5 class="designer_title">Amazing Cosmetic</h5>
-                    <ul class="designer_list">
-                        <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
-                        <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
-                        <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
-                        <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
-                        <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
-                    </ul>
-                    <p class="designer_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    <h6 class="designer_name">Rusmin Islam</h6>
-                    <p class="designer_designer">Designer</p>
+            </div>
+        </section>
+        <section class="designer">
+            <div class="container">
+                <div class="designer_wrapper">
+                    <img class="designer_img" src="img/woman.png" alt="woman">
+                    <div class="designer_textbox">
+                        <h5 class="designer_title">Amazing Cosmetic</h5>
+                        <ul class="designer_list">
+                            <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
+                            <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
+                            <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
+                            <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
+                            <li class="designer_list_img"><img src="img/Star.png" alt="Star"></li>
+                        </ul>
+                        <p class="designer_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                        <h6 class="designer_name">Rusmin Islam</h6>
+                        <p class="designer_designer">Designer</p>
+                    </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="subscribe">
                 <h4 class="subscribe_title">Subscribe to Get Our Letest News</h4>
-                <form action="" class="subscribe_form">
-                    <input type="email" name="email" placeholder="Enter email" required>
-                    <button class="form_button">Subscribe</button>
-                </form>
+                <div class="subscribe_wrapper">
+                    <form action="" class="subscribe_form">
+                        <input type="email" name="email" placeholder="Enter email" required>
+                        <button class="form_button">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="footer_container">

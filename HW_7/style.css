@@ -2,14 +2,13 @@ body{
     font: 400 20px/32px Red Hat Display, sans-serif;
 }
 .header{
-    max-width: 1240px;
-    margin: 0 auto;
+    background-color:  #F9F6F5;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    padding-top: 40px;
     margin-bottom: 72px;
 }
 .nav_list{
@@ -48,9 +47,17 @@ body{
     width: 515px;
     margin-top: 30px;
 }
+.search_wrapper{
+    width: 326px;
+    position: relative;
+}
 .best_product_search{
     margin-top: 30px;
     margin-bottom: 60px;
+    display: block;
+    width: 326px;
+    padding: 10px 10px;
+    position: relative;
 }
 form input[type="text"]::placeholder{
     font-weight: 400;
@@ -62,6 +69,9 @@ form input[type="text"]::placeholder{
     background-color: #402F2C;
     width: 32px;
     height: 32px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
 }
 .best_product_img{
     margin-left: 100px;
@@ -83,11 +93,20 @@ form input[type="text"]::placeholder{
 .companies{
     margin-top: 130px;
 }
+.companies_line_1{
+    border: 1px solid #848484;
+    margin-bottom: 52.5px;
+}
+.companies_line_2{
+    border: 1px solid #848484;
+}
 .companies_list{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 34px;
     margin-right: 34px;
+    padding-bottom: 52.5px;
 }
 .popular{
     margin-top: 130px;
@@ -96,6 +115,7 @@ form input[type="text"]::placeholder{
 .popular_box{
     align-items: center;
     display: flex;
+    justify-content: space-between;
 }
 .popular_title{
     font-weight: 500;
@@ -108,13 +128,13 @@ form input[type="text"]::placeholder{
     margin-top: 20px;
     width: 717px;
 }
-.popular_button{
-    margin-left: 246px;
+.popular_link{
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     text-decoration: underline;
     color: #222222;
+    text-decoration: none;
 }
 .cards{
     margin-top: 60px;
@@ -124,11 +144,13 @@ form input[type="text"]::placeholder{
     display: inline-block;
     box-sizing: border-box;
     margin-right: 185px;
+    border: 1px solid #685A5230;
 }
 .card_2{
     max-width: 525px;
     display: inline-block;
     box-sizing: border-box;
+    border: 1px solid #685A5230;
 }
 .card_img{
     width: 525px;
@@ -177,6 +199,9 @@ form input[type="text"]::placeholder{
     line-height: 32px;
     color: #222222;
 }
+.counters_wrapper{
+    background-color: #FDF8F5;
+}
 .counters{
     margin-left: 97px;
     margin-right: 97px;
@@ -200,7 +225,7 @@ form input[type="text"]::placeholder{
 .counter_text{
     color: #555;
 }
-.perfect{
+.perfect_wrapper{
     display: flex;
 }
 .perfect_title{
@@ -228,7 +253,7 @@ form input[type="text"]::placeholder{
     width: 148px;
     margin-top: 50px;
 }
-.designer{
+.designer_wrapper{
     display: flex;
     margin-top: 130px;
     margin-bottom: 233px;
@@ -276,11 +301,17 @@ form input[type="text"]::placeholder{
     line-height: 46px;
     color: #222222;
 }
+.subscribe_form{
+    display: block;
+    width: 386px;
+    padding: 10px 10px;
+    position: relative;
+}
 form input[type="email"]::placeholder{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
-    color: #555555;
+    color: #999;
 }
 .form_button{
     background-color: #402F2C;
@@ -291,6 +322,9 @@ form input[type="email"]::placeholder{
     line-height: 20px;
     height: 40px;
     width: 103px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
 }
 .footer_container{
     margin: 0 auto;
@@ -299,6 +333,7 @@ form input[type="email"]::placeholder{
 .footer_bottom{
     display: flex;
     padding-bottom: 87px;
+    color: #DDDDDD;
 }
 .footer_bottom_logo{
     text-decoration: underline;
