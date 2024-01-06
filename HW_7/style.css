@@ -2,7 +2,7 @@ body{
     font: 400 20px/32px Red Hat Display, sans-serif;
 }
 .header{
-    background-color:  #F9F6F5;
+    background-color: #F9F6F5;
 }
 .navbar{
     display: flex;
@@ -93,12 +93,10 @@ form input[type="text"]::placeholder{
 .companies{
     margin-top: 130px;
 }
-.companies_line_1{
-    border: 1px solid #848484;
-    margin-bottom: 52.5px;
-}
-.companies_line_2{
-    border: 1px solid #848484;
+.companies_wrapper{
+    border-top: 1px solid #848484;
+    border-bottom: 1px solid #848484;
+    padding: 52.5px 0px;
 }
 .companies_list{
     display: flex;
@@ -106,7 +104,6 @@ form input[type="text"]::placeholder{
     align-items: center;
     margin-left: 34px;
     margin-right: 34px;
-    padding-bottom: 52.5px;
 }
 .popular{
     margin-top: 130px;
@@ -151,6 +148,9 @@ form input[type="text"]::placeholder{
     display: inline-block;
     box-sizing: border-box;
     border: 1px solid #685A5230;
+}
+.popular_card_textbox{
+    padding:32px;
 }
 .card_img{
     width: 525px;
@@ -199,13 +199,12 @@ form input[type="text"]::placeholder{
     line-height: 32px;
     color: #222222;
 }
-.counters_wrapper{
-    background-color: #FDF8F5;
-}
 .counters{
-    margin-left: 97px;
-    margin-right: 97px;
+    background-color: #F9F6F5;
+}
+.counters_wrapper{
     margin-bottom: 130px;
+    padding: 55px 75px;
 }
 .counters_list{
     display: flex;
@@ -326,14 +325,14 @@ form input[type="email"]::placeholder{
     right: 5px;
     top: 7px;
 }
-.footer_container{
-    margin: 0 auto;
-    max-width: 1030px;
+.footer{
+    color: #FAFAFA;
 }
 .footer_bottom{
     display: flex;
+    padding-right: 105px;
+    padding-left: 105px;
     padding-bottom: 87px;
-    color: #DDDDDD;
 }
 .footer_bottom_logo{
     text-decoration: underline;
