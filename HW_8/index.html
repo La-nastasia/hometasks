@@ -11,29 +11,29 @@
     <title>HW_8</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__wrapper">
-                <nav class="nav">
-                    <img class="header__logo" src="img/Logo.png" alt="Logo">
-                    <ul class="nav-list">
-                        <li class="nav-list__item">Product</li>
-                        <li class="nav-list__item">Features</li>
-                        <li class="nav-list__item">Pricing</li>
-                        <li class="nav-list__item">Resources</li>
+    <header class="header-wrapper">
+        <div class="container header__container">
+            <div class="header">
+                <nav class="header__nav">
+                    <img class="header__nav__logo" src="img/Logo.png" alt="Logo">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-list__item">Product</li>
+                        <li class="header__nav-list__item">Features</li>
+                        <li class="header__nav-list__item">Pricing</li>
+                        <li class="header__nav-list__item">Resources</li>
                     </ul>
-                    <div class="nav-button-box">
-                        <button class="nav-button button-box__button_nav_1">Log In</button>
-                        <button class="nav-button button-box__button_nav_2">Sign Up</button>
+                    <div class="header__nav-button-box">
+                        <button class="header__nav-button button-box__button_nav_1">Log In</button>
+                        <button class="header__nav-button button-box__button_nav_2">Sign Up</button>
                     </div>
                 </nav>
                 <div class="header__content">
                     <button class="header__button">HEADER</button>
                     <h1 class="header__title">A small business is only as good as its tools. </h1>
                     <p class="header__text">We're different. Flex is the only saas business platform that lets you run your business on one platform, seamlessly across all digital channels.</p>
-                    <div class="button-box">
-                        <button class="button-box__button button-box__button_1">Request a Demo</button>
-                        <button class="button-box__button button-box__button_2">Sign Up</button>
+                    <div class="header__button-box">
+                        <button class="header__button-box__button button-box__button_1">Request a Demo</button>
+                        <button class="header__button-box__button button-box__button_2">Sign Up</button>
                     </div>
                 </div>
                 <img class="header__img" src="img/work.png" alt="work">
@@ -62,7 +62,7 @@
                     <p class="data__text">Flex is the only business platform that lets you run your business on one platform, seamlessly across all digital channels.</p>
                     <div class="counters">
                         <ul class="counters__list">
-                            <li class="counters__item">
+                            <li class="counters__list__item">
                                 <h4 class="counters__item__number">235.000</h4>
                                 <h5 class="counters__item__title">Projects completed</h5>
                                 <p class="counters__item__text"> No need to hire specialists for each channel.</p>
@@ -150,9 +150,9 @@
                         <div class="send">
                             <form action="" class="send-form">
                                 <p class="send-form__label">Email</p>
-                                <input type="email" placeholder="pat@shuffle.dev">
+                                <input type="email" placeholder="pat@shuffle.dev" class="send-form__email">
                                 <p class="send-form__label">Message</p>
-                                <input type="text">
+                                <textarea class="send-form__textarea"></textarea>
                             </form>
                             <button class="send-form__button">Send</button>
                         </div>
