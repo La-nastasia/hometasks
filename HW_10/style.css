@@ -1,0 +1,32 @@
+body{
+    font-family: 'Noto Serif', serif;
+}
+.carousel-form__title{
+    font-weight: 700;
+    font-size: 16px;
+}
+.card-title{
+    font-weight: 500;
+    font-size: 18px;
+}
+.card-title__test{
+    color: dimgray;
+}
+.card-text{
+    color:dimgray;
+}
+.card-block__form__title{
+    font-weight: 700;
+    font-size: 16px;
+}
+@media screen and (max-width:765px){
+    body{
+        font-size: 12px;
+        }
+    .d-block{
+        margin-top: 40px;
+    }
+    .card-block__form{
+        margin: 0 auto;
+    }
+}
