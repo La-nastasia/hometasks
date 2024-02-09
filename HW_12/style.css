@@ -105,22 +105,24 @@ body{
     }
 }
 .header__nft{
-    padding: 80px 0;
+    padding: 80px 0 170px 0;
 }
 .header__nft__box{
-    display: flex;
-    gap: 30px;
-}
-.header__nft__textbox{
-    display: inline;
+    display: grid;
+    grid-template-columns: 510px 510px;
+    grid-template-rows: 350px 80px;
+    grid-gap: 30px; 
 }
 .header__nft__imgbox{
-    display: inline;
-    background-color: #3B3B3B;
     border-radius: 20px;
+    background-color: #3B3B3B;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    height: 510px;
 }
 .header__nft__listbox{
-    margin-top: -130px;
+    grid-column-start: 1;
+    grid-row-start: 2;
 }
 .header__nft__textbox__title{
     width: 480px;
@@ -136,8 +138,18 @@ body{
     line-height: 35.2px;
     font-weight: 400;
     color: #fff;
+    margin-bottom: 30px;
 }
 @media screen and (max-width: 1100px){
+    .header__nft{
+        padding: 80px 0 110px 0;
+    }
+    .header__nft__box{
+        display: grid;
+        grid-template-columns: 330px 330px;
+        grid-template-rows: 300px 30px;
+        grid-gap: 30px; 
+    }
     .header__nft__textbox__title{
         width: 330px;
         font-size: 38px;
@@ -153,7 +165,7 @@ body{
         color: #fff;
     }
     .header__nft__imgbox{
-        margin-left: 10px; 
+        height: 330px;
     }
     .header__nft__imgbox__img{
         width: 330px;
@@ -161,9 +173,14 @@ body{
     }    
 }
 @media screen and (max-width: 710px){
+    .header__nft{
+        padding: 80px 0;
+    }
     .header__nft__box{
-        display: inline;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 315px;
+        grid-template-rows: 120px 270px 210px;
+        grid-gap: 30px; 
     }
     .header__nft__textbox__title{
         font-size: 28px;
@@ -178,21 +195,26 @@ body{
         line-height: 22px;
         margin-top: -10px;
         width: 315px;
-        margin-bottom: 40px;
+    }
+    .header__nft__imgbox{
+        grid-row-start:2 ;
+        grid-column-start:1;
+        height: 320px;
+        margin-bottom: 50px;
     }
     .header__nft__imgbox__img{
-        margin-left: -10px;
-        margin-top: -10px;
         width: 315px;
         height: 206px; 
     }
     .header__nft__imgbox__caption{
         width: 315px;
         height: 109px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        background-color: #3B3B3B;
-    }   
+    } 
+    .header__nft__listbox{
+        grid-column-start: 1;
+        grid-row-start: 3;
+        margin-top: 90px;
+    }  
 }
 .header__nft__imgbox__caption{
     padding: 20px;
@@ -215,7 +237,7 @@ body{
     font-weight: 400;
     color: #fff;
 }
-.header__nft__textbox__btn{
+.header__nft__listbox__btn{
     padding: 0 50px;
     background-color: #A259FF;
     height: 60px;
@@ -226,7 +248,7 @@ body{
     font-weight: 600;
     margin-bottom: 30px;
 }
-.header__nft__textbox__btn__img{
+.header__nft__listbox__btn__img{
     margin-right: 12px;
 }
 .header__nft__listbox__list{
@@ -271,7 +293,7 @@ body{
     .header__nft__listbox{
         margin-top: 55px;
     }
-    .header__nft__textbox__btn{
+    .header__nft__listbox__btn{
         width: 315px;
     }
     .header__nft__listbox__list{
@@ -441,19 +463,17 @@ body{
 .creators__card__number{
     width: 30px;
     height: 30px;
-    position: relative;
+    position: absolute;
     color: #858584;
     background-color: #2B2B2B;
     border-radius: 20px;
     font-size: 16px;
     line-height: 22.4px;
     font-weight: 400;
-    left: -35px;
-    top: -5px;
+    margin-left: -45px;
 }
 .creators__card__img{
     margin-bottom: 20px;
-    margin-left: -25px;
 }
 .creators__card__title{
     font-size: 22px;
@@ -689,19 +709,17 @@ body{
     color: #fff;
     margin-bottom: -15px;
 }
-.main-container{
-    max-width: 1280px;
-    margin: 0 auto;
-}
-.mushroom-wrapper{
-    background-color: #2B2B2B;
-}
 .mushroom{
+    background-color: #2B2B2B;
     padding: 15px 0 60px 0;
+}
+.mushroom__img{
+    background-image: url('img/Mushroom.png');
+    height: 640px;
+    background-position: center;
 }
 .mushroom__gradient{
     background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
-    width: 1280px;
     height: 640px;
     position: relative;
     margin-top: -640px;
