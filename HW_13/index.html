@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>HW_13</title>
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="header container header-container">
+        <nav class="header-nav">
+          <img src="img/Logo.svg" alt="logo" class="header-nav__logo" />
+          <ul class="nav">
+            <li class="nav__item"><a href="#" class="nav__item__link">Marketplace</a></li>
+            <li class="nav__item"><a href="#" class="nav__item__link">Rankings</a></li>
+            <li class="nav__item"><a href="#" class="nav__item__link">Connect a wallet</a></li>
+            <li class="nav__item">
+              <button class="nav__item__btn">
+                <img src="img/User.svg" alt="user" /> Sign Up
+              </button>
+            </li>
+          </ul>
+          <div class="header-nav-btn nav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <script>
+            let menuBtn = document.querySelector(".nav-btn");
+            let menu = document.querySelector(".nav");
+            menuBtn.addEventListener("click", function () {
+              menu.classList.toggle("active");
+            });
+          </script>
+        </nav>
+      </div>
+    </header>
+    <main class="main-wrapper">
+      <section class="container main">
+        <img src="img/Image Placeholder.png" alt="image" class="main__img">
+        <div class="main__textbox">
+          <h2 class="main__textbox__title">Create account</h2>
+          <p class="main__textbox__text">Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+          <form action="" class="main__textbox__form">
+            <img class="main__textbox__form__img" src="img/UserForm.svg" alt="user">
+            <input class="main__textbox__form__input" type="text" placeholder="Username" />
+            <img class="main__textbox__form__img" src="img/EnvelopeSimple.svg" alt="email">
+            <input class="main__textbox__form__input" type="email" placeholder="Email Address" />
+            <img class="main__textbox__form__img" src="img/LockKey.svg" alt="lock">
+            <input class="main__textbox__form__input" type="password" placeholder="Password" />
+            <img class="main__textbox__form__img" src="img/LockKey.svg" alt="lock">
+            <input class="main__textbox__form__input" type="password" placeholder="Confirm Password" />
+            <button class="main__textbox__form__btn" type="submit">Create account</button>
+          </form>
+        </div>
+      </section>
+    </main>
+     <footer class="footer-wrapper-background">
+      <div class="footer-wrapper container footer-container">
+        <div class="footer">
+          <div class="footer-about">
+            <img src="img/Logo.svg" alt="logo" class="footer-about__img" />
+            <p class="footer-about__text footer-about__text1">
+              NFT marketplace UI created with Anima for Figma.
+            </p>
+            <p class="footer-about__text footer-about__text2">
+              Join our community
+            </p>
+            <ul class="footer-about__list">
+              <li class="footer-about__list__item">
+                <img
+                  class="footer-about__list__item__img"
+                  src="img/DiscordLogo.svg"
+                  alt="icon"
+                />
+              </li>
+              <li class="footer-about__list__item">
+                <img
+                  class="footer-about__list__item__img"
+                  src="img/YoutubeLogo.svg"
+                  alt="icon"
+                />
+              </li>
+              <li class="footer-about__list__item">
+                <img
+                  class="footer-about__list__item__img"
+                  src="img/TwitterLogo.svg"
+                  alt="icon"
+                />
+              </li>
+              <li class="footer-about__list__item">
+                <img
+                  class="footer-about__list__item__img"
+                  src="img/InstagramLogo.svg"
+                  alt="icon"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="footer-explore">
+            <h5 class="footer-explore__title">Explore</h5>
+            <ul class="footer-explore__list">
+              <li class="footer-explore__list__item">Marketplace</li>
+              <li class="footer-explore__list__item">Rankings</li>
+              <li class="footer-explore__list__item">Connect a wallet</li>
+            </ul>
+          </div>
+          <div class="footer-join">
+            <h5 class="footer-join__title">Join our weekly digest</h5>
+            <p class="footer-join__text">
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+            <form action="" class="footer-join__form">
+              <input class="footer-join__form__input" type="email" placeholder="Enter your email here" />
+              <button class="footer-join__form__btn" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr class="footer-wrapper__line" />
+        <p class="footer-wrapper__copyright">
+          Ⓒ NFT Market. Use this template freely.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
